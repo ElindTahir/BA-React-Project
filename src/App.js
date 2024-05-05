@@ -8,20 +8,20 @@ import FetchAPIPage from './pages/FetchApiPage/FetchApiPage';
 import ChartPage from './pages/ChartPage/ChartPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" exact component={LandingPage} />
-          <Route path="/database" component={DatabasePage} />
-          <Route path="/fetch-api" component={FetchAPIPage} />
-          <Route path="/charts" component={ChartPage} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/database" element={<DatabasePage />} />
+          <Route path="/fetch-api" element={<FetchAPIPage />} />
+          <Route path="/charts" element={<ChartPage />} />
         </Routes>
       </div>
     </Router>
   );
 }
+
 export default App;
