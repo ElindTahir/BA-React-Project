@@ -1,9 +1,9 @@
 a {
     text-decoration: none !important;
     color: white !important;
-}
-
-.center-container {
+  }
+  
+  .centerContainer {
     position: relative;
     bottom: 120px;
     display: flex;
@@ -11,25 +11,25 @@ a {
     align-items: center;
     height: 90vh;
     flex-direction: row;
-}
-
-.btn-One {
+  }
+  
+  .btnOne {
     height: 250px;
     width: 250px;
     border: 2px solid #ED2939 !important;
-    background-color: #ED2939 !important; 
+    background-color: #ED2939 !important;
     color: white !important;
     font-size: 24px !important;
     border-radius: 30px !important;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
-}
-
-.btn-One:hover {
+  }
+  
+  .btnOne:hover {
     background-color: #D30000 !important;
     color: white !important;
-}
-
-.btn-Two {
+  }
+  
+  .btnTwo {
     height: 250px;
     width: 250px;
     border: 2px solid #003E7F !important;
@@ -38,14 +38,14 @@ a {
     font-size: 24px !important;
     border-radius: 30px !important;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
-}
-
-.btn-Two:hover {
+  }
+  
+  .btnTwo:hover {
     background-color: #002966 !important;
     color: white !important;
-}
-
-.btn-Three {
+  }
+  
+  .btnThree {
     height: 250px;
     width: 250px;
     border: 2px solid #339933 !important;
@@ -54,9 +54,10 @@ a {
     font-size: 24px !important;
     border-radius: 30px !important;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
-}
-
-.btn-Three:hover {
+  }
+  
+  .btnThree:hover {
     background-color: #1a8d1a !important;
     color: white !important;
-}
+  }
+  

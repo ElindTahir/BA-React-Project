@@ -1,25 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DatabasePage from '../DatabasePage/DatabasePage';
-import FetchApiPage from '../FetchApiPage/FetchApiPage';
-import ChartPage from '../ChartPage/ChartPage';
-import './LandingPage.scss'
+import styles from './LandingPage.module.scss';
 
 function LandingPage() {
   return (
-    <div className="center-container">
+    <div className={styles.centerContainer}>
       <Link to="/database">
-        <button className="btn btn-One m-4">
+        <button className={`btn ${styles.btnOne} m-4`}>
           DB Komponente
         </button>
       </Link>
       <Link to="/fetch-api">
-        <button className="btn btn-Two m-4">
+        <button className={`btn ${styles.btnTwo} m-4`}>
           API Komponente
         </button>
       </Link>
       <Link to="/charts">
-        <button className="btn btn-Three m-4">
+        <button className={`btn ${styles.btnThree} m-4`}>
           Chart Komponente
         </button>
       </Link>
