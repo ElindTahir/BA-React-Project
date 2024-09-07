@@ -6,6 +6,7 @@ import LandingPage from './pages/LandingPage/LandingPage.tsx';
 import DatabasePage from './pages/DatabasePage/DatabasePage.tsx';
 import FetchAPIPage from './pages/FetchApiPage/FetchApiPage.tsx';
 import ChartPage from './pages/ChartPage/ChartPage.tsx';
+import MockDataPage from './pages/MockDataPage/MockDataPage.tsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/database" element={<DatabasePage />} />
           <Route path="/fetch-api" element={<FetchAPIPage />} />
           <Route path="/charts" element={<ChartPage />} />
+          <Route path="/mock-data" element={<MockDataPage />} />
         </Routes>
       </div>
     </Router>

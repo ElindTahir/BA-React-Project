@@ -20,6 +20,11 @@ function LandingPage() {
           Chart Komponente
         </button>
       </Link>
+      <Link to="/mock-data">
+        <button className={`btn ${styles.btnFour} m-4`}>
+          Mock-Data Komponente
+        </button>
+      </Link>
     </div>
   );
 }
