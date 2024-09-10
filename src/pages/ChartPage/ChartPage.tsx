@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import axios from 'axios';
@@ -29,6 +29,10 @@ function ChartPage() {
       borderWidth: 1
     }]
   });
+
+  useEffect(() => {
+    loadPieChart();
+  }, []); 
 
   const loadChartData = async () => {
     try {
