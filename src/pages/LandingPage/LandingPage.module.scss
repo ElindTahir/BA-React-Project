@@ -64,15 +64,15 @@ a {
 .btnFour {
   height: 250px;
   width: 250px;
-  border: 2px solid #FFD700;
-  background-color: #FFD700;
-  color: white;
-  font-size: 24px;
-  border-radius: 30px;
+  border: 2px solid #FFD700 !important;
+  background-color: #FFD700 !important;
+  color: white !important;
+  font-size: 24px !important;
+  border-radius: 30px !important;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
 }
 
 .btnFour:hover {
-  background-color: #FFC300;
-  color: white;
+  background-color: #FFC300 !important;
+  color: white !important;
 }
