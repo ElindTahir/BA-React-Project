@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import mockData from './Json/mock_data.json';
 import styles from './MockDataPage.module.scss';
 
 function MockDataPage() {
   const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    loadData();
-  }, []); 
 
   const loadData = () => {
     setItems(mockData);

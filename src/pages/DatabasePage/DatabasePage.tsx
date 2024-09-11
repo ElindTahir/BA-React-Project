@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import databaseService from '../../service/database-service/databaseService.tsx';
 import styles from './DatabasePage.module.scss';
 
 function DatabasePage() {
   const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    loadData();
-  }, []); 
 
   const loadData = async () => {
     console.log("Lade Daten...");

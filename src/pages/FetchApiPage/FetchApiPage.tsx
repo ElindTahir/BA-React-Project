@@ -5,26 +5,15 @@ import styles from './FetchApiPage.module.scss';
 function FetchApiPage() {
   const [deckId, setDeckId] = useState('');
   const [cards, setCards] = useState([]);
-  const [numCardsToDraw, setNumCardsToDraw] = useState(12); // Standardwert auf 12 ändern
+  const [numCardsToDraw, setNumCardsToDraw] = useState(6);
   const [deckCreatedMessage, setDeckCreatedMessage] = useState('');
 
-  // Deck wird beim Laden der Seite erstellt
-  useEffect(() => {
-    const initializeDeck = async () => {
-      const data = await deckOfCardsService.createNewDeck();
-      setDeckId(data.deck_id);
-      setDeckCreatedMessage('Kartendeck wurde erstellt!');
-      
-      // 12 Karten ziehen, sobald das Deck erstellt ist
-      const drawData = await deckOfCardsService.drawCards(data.deck_id, 12);
-      setCards(drawData.cards);
-
-      // Nachricht nach 3 Sekunden ausblenden
-      setTimeout(() => setDeckCreatedMessage(''), 3000);
-    };
-
-    initializeDeck();
-  }, []); // Leerer Dependency-Array, damit dies nur einmal bei Page Load ausgeführt wird
+  const createDeck = async () => {
+    const data = await deckOfCardsService.createNewDeck();
+    setDeckId(data.deck_id);
+    setDeckCreatedMessage('Kartendeck wurde erstellt!');
+    setTimeout(() => setDeckCreatedMessage(''), 3000);
+  };
 
   const drawCard = async () => {
     if (numCardsToDraw > 0) {
@@ -38,7 +27,7 @@ function FetchApiPage() {
       <h1 className={styles.title}>Fetchen von Poker Karten von einer API</h1>
       <div className={"container"}>
         <div className={`${styles.buttonContainer} mb-2`}>
-          <button className="btn btn-primary" onClick={() => window.location.reload()}>Neues Deck erstellen</button>
+          <button className="btn btn-primary" onClick={createDeck}>Neues Deck erstellen</button>
           {deckCreatedMessage && <span className={styles.message}>{deckCreatedMessage}</span>}
         </div>
         <div className={`${styles.buttonContainer} mb-5`}>
