@@ -1,0 +1,78 @@
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.centerContainer {
+  position: relative;
+  bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: row;
+}
+
+.btnOne {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #ED2939 !important;
+  background-color: #ED2939 !important;
+  color: white !important;
+  font-size: 24px !important;
+  border-radius: 30px !important;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btnOne:hover {
+  background-color: #D30000 !important;
+  color: white !important;
+}
+
+.btnTwo {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #003E7F !important;
+  background-color: #003E7F !important;
+  color: white !important;
+  font-size: 24px !important;
+  border-radius: 30px !important;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btnTwo:hover {
+  background-color: #002966 !important;
+  color: white !important;
+}
+
+.btnThree {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #339933 !important;
+  background-color: #339933 !important;
+  color: white !important;
+  font-size: 24px !important;
+  border-radius: 30px !important;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btnThree:hover {
+  background-color: #1a8d1a !important;
+  color: white !important;
+}
+
+.btnFour {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #FFD700 !important;
+  background-color: #FFD700 !important;
+  color: white !important;
+  font-size: 24px !important;
+  border-radius: 30px !important;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btnFour:hover {
+  background-color: #FFC300 !important;
+  color: white !important;
+}
